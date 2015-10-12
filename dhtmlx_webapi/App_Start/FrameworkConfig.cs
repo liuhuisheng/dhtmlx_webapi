@@ -17,6 +17,7 @@ namespace dhtmlx_webapi
                 .RegisterDependencyResolver()
                 .RegisterProjectModules()
                 .RegisterHttpCorsSupport()
+                .RegisterDisposeFilter()
                 .ConfigEditPageAutoInsert(EditPageAutoInser)
                 .ConfigEditPageAutoUpdate(EditPageAutoUpdate)
                 .ConfigDefaultDbContextExecuting(DbContextExecuting);

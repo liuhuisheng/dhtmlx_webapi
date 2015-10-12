@@ -1,4 +1,5 @@
-﻿using Chitu.Data;
+﻿using Chitu.Context;
+using Chitu.Data;
 using Chitu.Security;
 using dhtmlx_webapi.Models;
 using System;
@@ -9,7 +10,7 @@ using System.Threading.Tasks;
 
 namespace dhtmlx_webapi.Services
 {
-    [Connection("default")]//不同service可以配置不同连接字符串，没有此属性时默认default
+    [Connection("default")] //不同service可以配置不同连接字符串，没有此属性时默认default
     public class TenantService : ITenantService
     {
         private IUser _user;
@@ -20,7 +21,7 @@ namespace dhtmlx_webapi.Services
             _user = user;
             _db = db;
         }
-
+ 
         //不分页查询
         public List<bas_tenant> GetTenantList()
         {
