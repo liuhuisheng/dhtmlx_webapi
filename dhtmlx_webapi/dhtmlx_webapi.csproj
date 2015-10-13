@@ -128,7 +128,6 @@
     <Compile Include="App_Start\FrameworkConfig.cs" />
     <Compile Include="Controllers\AppController.cs" />
     <Compile Include="Controllers\TenantController.cs" />
-    <Compile Include="Controllers\LogController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
